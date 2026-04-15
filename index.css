@@ -159,9 +159,42 @@ table td .edit{
     border-radius: 4px;
 }
 table td .delete{
-    background-color: red;
+    background-color: #E74C3C;
     border: none;
     padding: 5px 10px;
     color: white;
     border-radius: 4px;
+}
+.stock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.total{
+    border: 1px solid blue;
+    padding-left: 10px;
+    background-color: aqua;
+    width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.total p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+
+}
+.value{
+    border: 1px solid blue;
+    padding-left: 10px;
+    background-color: aqua;
+    width: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.value p{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
 }
