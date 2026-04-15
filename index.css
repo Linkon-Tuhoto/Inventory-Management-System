@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.whole-head{
+    background-color: #2F8F83;
+    text-align: center;
+    padding: 20px;
+}
+.whole-head h1{
+    font-size: 30px;
+    color: white;
+}
