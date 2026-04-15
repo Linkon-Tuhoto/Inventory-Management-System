@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F5F7FA;
 }
 .whole-head{
     background-color: #2F8F83;
@@ -11,4 +12,57 @@ body{
 .whole-head h1{
     font-size: 30px;
     color: white;
+}
+.add-product{
+    border: none;
+    border-radius: 20px;
+    width: 1100px;
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.heading{
+    background-color: #2F8F83;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.add-product form{
+    margin: 0;
+    padding: 10px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.add-product form label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.add-product form input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.add-product form select{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.add-product form button{
+    background-color: #2F8F83;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.add-product form button:hover{
+    background-color: #256D6A;
 }
