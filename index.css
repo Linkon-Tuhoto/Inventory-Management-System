@@ -145,3 +145,23 @@ table th{
 table tr:hover{
     background-color: #f1f1f1;
 }
+table tr:nth-child(odd){
+    background-color: #f9f9f9;
+}
+table tr:nth-child(even){
+    background-color: #ffffff;
+}
+table td .edit{
+    background-color: green;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+}
+table td .delete{
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 4px;
+}
