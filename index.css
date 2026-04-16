@@ -42,11 +42,20 @@ body{
     font-weight: bold;
 }
 .add-product form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+/*focus*/
+.add-product form input:focus{
+    border-color: #2F8F83;
+    box-shadow: 0 0 5px rgba(47, 143, 131, 0.5);
+    outline: none;
 }
 .add-product form select{
     display: flex;
@@ -57,6 +66,11 @@ body{
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+.add-product form select:focus{
+    border-color: #2F8F83;
+    box-shadow: 0 0 5px rgba(47, 143, 131, 0.5);
+    outline: none;
 }
 .add-product form button{
     background-color: #2F8F83;
@@ -116,6 +130,11 @@ form .quantity-l{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+.search input:focus{
+    border-color: #2F8F83;
+    box-shadow: 0 0 5px rgba(47, 143, 131, 0.5);
+    outline: none;
+}
 .search select{
     display: flex;
     justify-content: center;
@@ -126,6 +145,11 @@ form .quantity-l{
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+.search select:focus{
+    border-color: #2F8F83;
+    box-shadow: 0 0 5px rgba(47, 143, 131, 0.5);
+    outline: none;
 }
 .search select option{
     padding: 10px;
@@ -212,6 +236,12 @@ table td .delete{
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    .add-product form select{
+        width: 100%;
+    }
+    form .quantity-l{
+        grid-template-columns: 1fr;
     }
     .search input, .search select {
         width: 100%;
