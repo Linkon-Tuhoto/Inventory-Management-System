@@ -57,7 +57,7 @@ function displayProducts(list = products){
         <td>${product.category}</td>
         <td>Ksh.${product.price.toFixed(2)}</td>
         <td class="${product.quantity < 5 ? 'Low-stock' : ''}">${product.quantity}</td>
-        <td>
+        <td class="action">
         <button class="edit" onclick="editProduct(${index})">Edit</button>
         <button class="delete" onclick="deleteProduct(${index})">Delete</button>
         </td>

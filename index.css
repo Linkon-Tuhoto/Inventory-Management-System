@@ -230,12 +230,15 @@ table td .delete{
     table{
         font-size: 14px;
     }
-    .table td button{
+    table td .edit, table td .delete{
         padding: 5px 8px;
         font-size: 12px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        gap: 5px;
+    }
+    table td .delete{
+        margin-top: 4px;
     }
     .add-product form select{
         width: 100%;
