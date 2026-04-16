@@ -40,6 +40,7 @@ function saveToStorage(){
 //------DISPLAYING------
 function displayProducts(list = products){
     table.innerHTML = `
+    <table>
     <tr>
     <th>Product</th>
     <th>Category</th>
@@ -47,17 +48,18 @@ function displayProducts(list = products){
     <th>Stock</th>
     <th>Actions</th>
     </tr>
+    </table>
     `;
     list.forEach((product,index) => {
         const row = `
-        <tr>
+        <tr class="">
         <td>${product.name}</td>
         <td>${product.category}</td>
         <td>Ksh.${product.price.toFixed(2)}</td>
-        <td>${product.quantity < 5 ? 'style = "color : red;"' : ""}>${product.quantity}</td>
+        <td class="${product.quantity < 5 ? 'Low-stock' : ''}">${product.quantity}</td>
         <td>
-        <button onclick="editProduct(${index})">Edit</button>
-        <button onclick="deleteProduct(${index})">Delete</button>
+        <button class="edit" onclick="editProduct(${index})">Edit</button>
+        <button class="delete" onclick="deleteProduct(${index})">Delete</button>
         </td>
         </tr>
         `;
@@ -100,3 +102,19 @@ function editProduct(index){
     displayProducts();
  }
  //--Search--
+ searchInput.addEventListener("input", function(){
+    const value = searchInput.value.toLowerCase();
+    const filtered = products.filter(p => p.name.toLowerCase().includes(value));
+    displayProducts(filtered);
+ });
+
+ //Total
+ function updateSummary(){
+    const totalProducts = products.length;
+    const totalValue = products.reduce((sum,p) => {
+        return sum + p.price * p.quantity;
+    }, 0);
+    document.querySelector(".total p").textContent = totalProducts;
+    document.querySelector(".value p").textContent = `Ksh ${totalValue}`;
+ }
+ displayProducts();

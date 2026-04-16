@@ -198,3 +198,41 @@ table td .delete{
     font-size: 40px;
     font-weight: 800;
 }
+@media (max-width: 768px) {
+    .add-product, .product-inventory {
+        width: 90%;
+        margin-left: 5%;
+    }
+    table{
+        font-size: 14px;
+    }
+    .table td button{
+        padding: 5px 8px;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .search input, .search select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .total{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .total p, h3{
+        font-size: 20px;
+    }
+    .value{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .value p, h3{
+        font-size: 20px;
+    }
+}
+.Low-stock{
+    color: red;
+    font-weight: 800;
+}
