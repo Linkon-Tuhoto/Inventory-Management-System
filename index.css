@@ -269,3 +269,11 @@ table td .delete{
     color: red;
     font-weight: 800;
 }
+.footer{
+    background-color: #2F8F83;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
